@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  @apply bg-ink-50 text-ink-900 font-sans;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+/* Generous line-height globally — needed for Devanagari (Hindi) text
+   which requires more vertical breathing room than Latin script. */
+body, input, textarea, select, button {
+  line-height: 1.6;
+}
